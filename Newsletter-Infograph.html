@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Software Analysis for University Departments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .tab-btn.active {
+            border-color: #0ea5e9;
+            background-color: #0ea5e9;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div class="container mx-auto max-w-5xl p-4 sm:p-8">
+
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-900">Newsletter Software Analysis</h1>
+            <p class="mt-3 text-lg text-slate-600">A detailed report for university departmental communication needs.</p>
+        </header>
+
+        <main class="space-y-12">
+            
+            <section id="requirements" class="bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-bold text-slate-900 border-b pb-4 mb-6">Core Requirements for Departmental Use</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-slate-700">
+                    <div class="flex items-start"><span class="text-sky-500 font-bold mr-3 mt-1">✓</span> <div><strong class="font-semibold">Newsletter Creation:</strong> Intuitive tools to build professional emails that reflect well on the department.</div></div>
+                    <div class="flex items-start"><span class="text-sky-500 font-bold mr-3 mt-1">✓</span> <div><strong class="font-semibold">Multi-User System:</strong> Allows multiple team members to create and manage communications.</div></div>
+                    <div class="flex items-start"><span class="text-sky-500 font-bold mr-3 mt-1">✓</span> <div><strong class="font-semibold">Multiple Distribution Lists:</strong> Ability to segment and manage different audiences.</div></div>
+                    <div class="flex items-start"><span class="text-sky-500 font-bold mr-3 mt-1">✓</span> <div><strong class="font-semibold">Performance Tracking:</strong> Tracks key metrics like email opens and clicks to measure engagement.</div></div>
+                </div>
+            </section>
+
+            <section id="comparison-table">
+                <h2 class="text-3xl font-bold text-slate-900 text-center mb-8">Comparative Overview</h2>
+                <div class="overflow-x-auto bg-white rounded-xl shadow-lg p-1">
+                    <table class="w-full text-left border-collapse">
+                        <thead class="bg-slate-100">
+                            <tr>
+                                <th class="p-4 font-semibold text-sm">Feature</th>
+                                <th class="p-4 font-semibold text-sm">Mailchimp</th>
+                                <th class="p-4 font-semibold text-sm">Campaign Monitor</th>
+                                <th class="p-4 font-semibold text-sm">Constant Contact</th>
+                                <th class="p-4 font-semibold text-sm">Smore</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm">
+                            <tr class="border-t">
+                                <td class="p-4 font-semibold text-sky-700">Best For</td>
+                                <td class="p-4"><strong>Growing Teams:</strong> A department wanting a balance of power and usability.</td>
+                                <td class="p-4"><strong>Professional Polish:</strong> A team prioritizing beautiful design and brand consistency.</td>
+                                <td class="p-4"><strong>All-in-One Simplicity:</strong> A team wanting an easy-to-use platform that covers all the basics.</td>
+                                <td class="p-4"><strong>Quick Visuals:</strong> A team needing to create stunning, simple announcements with speed.</td>
+                            </tr>
+                            <tr class="border-t bg-slate-50">
+                                <td class="p-4 font-semibold text-sky-700">Multi-User</td>
+                                <td class="p-4"><span class="font-bold text-green-600">Excellent.</span> Clear user roles and permissions.</td>
+                                <td class="p-4"><span class="font-bold text-green-600">Excellent.</span> Strong collaboration and approval features.</td>
+                                <td class="p-4"><span class="font-bold text-yellow-600">Good.</span> Supports multiple users, straightforward for small teams.</td>
+                                <td class="p-4"><span class="font-bold text-yellow-600">Good.</span> Team plans allow for collaboration.</td>
+                            </tr>
+                            <tr class="border-t">
+                                <td class="p-4 font-semibold text-sky-700">List Management</td>
+                                <td class="p-4"><span class="font-bold text-green-600">Excellent.</span> Advanced segmentation and tagging.</td>
+                                <td class="p-4"><span class="font-bold text-blue-600">High.</span> Powerful and easy-to-use segmentation.</td>
+                                <td class="p-4"><span class="font-bold text-blue-600">High.</span> Easy to manage lists and basic segments.</td>
+                                <td class="p-4"><span class="font-bold text-orange-600">Basic.</span> Less focus on complex segmentation.</td>
+                            </tr>
+                            <tr class="border-t bg-slate-50">
+                                <td class="p-4 font-semibold text-sky-700">Ease of Use</td>
+                                <td class="p-4"><span class="font-bold text-orange-600">Moderate.</span> Powerful, with a slight learning curve.</td>
+                                <td class="p-4"><span class="font-bold text-blue-600">High.</span> Very intuitive and user-friendly.</td>
+                                <td class="p-4"><span class="font-bold text-blue-600">High.</span> Designed for beginners and small teams.</td>
+                                <td class="p-4"><span class="font-bold text-green-600">Very High.</span> The easiest and fastest platform.</td>
+                            </tr>
+                            <tr class="border-t">
+                                <td class="p-4 font-semibold text-sky-700">Analytics</td>
+                                <td class="p-4"><span class="font-bold text-green-600">Excellent.</span> In-depth reporting and A/B testing.</td>
+                                <td class="p-4"><span class="font-bold text-blue-600">High.</span> Clear, visual reports on campaign performance.</td>
+                                <td class="p-4"><span class="font-bold text-blue-600">High.</span> Provides all essential open/click tracking.</td>
+                                <td class="p-4"><span class="font-bold text-yellow-600">Good.</span> Tracks views and engagement on the newsletter page.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-4 mt-4 text-sm">
+                    <h4 class="font-bold text-slate-800 mb-2">Rating Legend</h4>
+                    <ul class="space-y-1 text-slate-600">
+                        <li><strong class="font-semibold text-green-600">Excellent/Very High:</strong> Top-tier functionality, a core strength.</li>
+                        <li><strong class="font-semibold text-blue-600">High:</strong> Strong capabilities that exceed typical requirements.</li>
+                        <li><strong class="font-semibold text-yellow-600">Good:</strong> Solid, reliable functionality for all necessary tasks.</li>
+                        <li><strong class="font-semibold text-orange-600">Moderate/Basic:</strong> Functional, but may be less powerful or intuitive.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="platform-details">
+                <h2 class="text-3xl font-bold text-slate-900 text-center mb-8">Platform Deep Dive: Multi-User & Pricing</h2>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8">
+                    <div class="border-b border-slate-200 mb-6">
+                        <nav class="-mb-px flex space-x-6" aria-label="Tabs">
+                            <button class="tab-btn active whitespace-nowrap py-3 px-1 border-b-2 font-medium text-sm" data-target="mailchimp">Mailchimp</button>
+                            <button class="tab-btn text-slate-500 hover:text-slate-700 hover:border-slate-300 whitespace-nowrap py-3 px-1 border-b-2 font-medium text-sm" data-target="campaign-monitor">Campaign Monitor</button>
+                            <button class="tab-btn text-slate-500 hover:text-slate-700 hover:border-slate-300 whitespace-nowrap py-3 px-1 border-b-2 font-medium text-sm" data-target="constant-contact">Constant Contact</button>
+                            <button class="tab-btn text-slate-500 hover:text-slate-700 hover:border-slate-300 whitespace-nowrap py-3 px-1 border-b-2 font-medium text-sm" data-target="smore">Smore</button>
+                        </nav>
+                    </div>
+
+                    <div id="mailchimp-content" class="tab-content active">
+                        <div class="grid md:grid-cols-5 gap-8">
+                            <div class="md:col-span-2">
+                                <h3 class="font-bold text-lg text-slate-800">Multi-User Options</h3>
+                                <p class="text-sm text-slate-600 mt-2">Uses a role-based system. The number of "seats" depends on the tier:</p>
+                                <ul class="text-sm list-disc list-inside mt-2 space-y-1">
+                                    <li><strong>Free:</strong> 1 user</li>
+                                    <li><strong>Essentials:</strong> Up to 3 users</li>
+                                    <li><strong>Standard:</strong> Up to 5 users</li>
+                                    <li><strong>Premium:</strong> Unlimited users</li>
+                                </ul>
+                            </div>
+                            <div class="md:col-span-3">
+                                <h3 class="font-bold text-lg text-slate-800">Pricing Tiers</h3>
+                                <table class="w-full text-sm mt-2">
+                                    <tr class="border-b"><td class="py-1 pr-2 font-semibold">Free</td><td class="py-1">~$0 / month</td></tr>
+                                    <tr class="border-b"><td class="py-1 pr-2 font-semibold">Essentials</td><td class="py-1">~$13 / month</td></tr>
+                                    <tr class="border-b"><td class="py-1 pr-2 font-semibold">Standard</td><td class="py-1">~$20 / month</td></tr>
+                                    <tr><td class="py-1 pr-2 font-semibold">Premium</td><td class="py-1">~$350 / month</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="campaign-monitor-content" class="tab-content">
+                         <div class="grid md:grid-cols-5 gap-8">
+                            <div class="md:col-span-2">
+                                <h3 class="font-bold text-lg text-slate-800">Multi-User Options</h3>
+                                <p class="text-sm text-slate-600 mt-2">Access is structured by plan:</p>
+                                <ul class="text-sm list-disc list-inside mt-2 space-y-1">
+                                    <li><strong>Lite:</strong> 1 user</li>
+                                    <li><strong>Essentials:</strong> Multiple users with defined permissions.</li>
+                                    <li><strong>Premier:</strong> Unlimited users with advanced features like template locking.</li>
+                                </ul>
+                            </div>
+                            <div class="md:col-span-3">
+                                <h3 class="font-bold text-lg text-slate-800">Pricing Tiers</h3>
+                                <table class="w-full text-sm mt-2">
+                                    <tr class="border-b"><td class="py-1 pr-2 font-semibold">Lite</td><td class="py-1">~$9 / month</td></tr>
+                                    <tr class="border-b"><td class="py-1 pr-2 font-semibold">Essentials</td><td class="py-1">~$29 / month</td></tr>
+                                    <tr><td class="py-1 pr-2 font-semibold">Premier</td><td class="py-1">~$149 / month</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="constant-contact-content" class="tab-content">
+                         <div class="grid md:grid-cols-5 gap-8">
+                            <div class="md:col-span-2">
+                                <h3 class="font-bold text-lg text-slate-800">Multi-User Options</h3>
+                                <p class="text-sm text-slate-600 mt-2">Allows multiple users with different roles:</p>
+                                <ul class="text-sm list-disc list-inside mt-2 space-y-1">
+                                    <li><strong>Lite:</strong> 1 user</li>
+                                    <li><strong>Standard:</strong> Up to 3 users (Owner, Creator, Viewer).</li>
+                                    <li><strong>Premium:</strong> Unlimited users.</li>
+                                </ul>
+                            </div>
+                            <div class="md:col-span-3">
+                                <h3 class="font-bold text-lg text-slate-800">Pricing Tiers</h3>
+                                <table class="w-full text-sm mt-2">
+                                    <tr class="border-b"><td class="py-1 pr-2 font-semibold">Lite</td><td class="py-1">~$12 / month</td></tr>
+                                    <tr class="border-b"><td class="py-1 pr-2 font-semibold">Standard</td><td class="py-1">~$35 / month</td></tr>
+                                    <tr><td class="py-1 pr-2 font-semibold">Premium</td><td class="py-1">~$80 / month</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="smore-content" class="tab-content">
+                         <div class="grid md:grid-cols-5 gap-8">
+                            <div class="md:col-span-2">
+                                <h3 class="font-bold text-lg text-slate-800">Multi-User Options</h3>
+                                <p class="text-sm text-slate-600 mt-2">Has a distinct model for team use:</p>
+                                <ul class="text-sm list-disc list-inside mt-2 space-y-1">
+                                    <li><strong>Educator Plans:</strong> Single-user licenses only.</li>
+                                    <li><strong>Smore for Teams:</strong> Required for multi-user collaboration. A group purchase of licenses managed from a central dashboard.</li>
+                                </ul>
+                            </div>
+                            <div class="md:col-span-3">
+                                <h3 class="font-bold text-lg text-slate-800">Pricing Tiers (Annual)</h3>
+                                <table class="w-full text-sm mt-2">
+                                    <tr class="border-b"><td class="py-1 pr-2 font-semibold">Educator Pro</td><td class="py-1">~$179 / year</td></tr>
+                                    <tr class="border-b"><td class="py-1 pr-2 font-semibold">Educator Premium</td><td class="py-1">~$299 / year</td></tr>
+                                    <tr><td class="py-1 pr-2 font-semibold">Smore for Teams</td><td class="py-1">~$999+ / year</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer class="mt-16 pt-8 border-t border-slate-200 space-y-12">
+            <section id="recommendation" class="text-center">
+                <h2 class="text-3xl font-bold text-slate-900">Recommendation</h2>
+                <div class="mt-6 max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg border-t-4 border-sky-500">
+                    <h3 class="text-xl font-bold text-slate-800">Office of Technology Recommendation</h3>
+                    <div class="mt-4 text-slate-600 space-y-4 text-left">
+                        <p>We recommend upgrading Smore to a Smore Teams license in the short term so that you are up and running for the close deadline event.</p>
+                        <p>Once that has passed and there is more time to consider a better solution, we recommend coming back to this report and investigating the tools listed to see what best fits your department's dynamic and budget.</p>
+                        <p>Based on this report, I, Lucas Ballard, would personally recommend Constant Contact. It seems very capable without a sharp learning curve.</p>
+                    </div>
+                </div>
+                <div class="mt-8 max-w-3xl mx-auto text-slate-600 space-y-3">
+                    <h3 class="text-xl font-bold text-slate-800">General Recommendations</h3>
+                    <p>For a team wanting a balance of power and future growth potential, <strong>start by evaluating Mailchimp</strong>.</p>
+                    <p>For a team that prioritizes ease of use and a polished, professional look above all, <strong>look at Campaign Monitor</strong>.</p>
+                    <p>For a team that needs to create visually impactful announcements with maximum speed and minimal training, <strong>Smore is the ideal choice</strong>.</p>
+                </div>
+            </section>
+
+            <section id="sources" class="bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-bold text-slate-900 border-b pb-4 mb-6">Sources</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-sm">
+                    <div>
+                        <h4 class="font-semibold text-slate-800 mb-2">General & Comparative</h4>
+                        <ul class="space-y-2">
+                            <li><a href="https://www.getresponse.com/blog/mailchimp-vs-campaign-monitor" class="text-sky-600 hover:underline">GetResponse: Mailchimp vs. Campaign Monitor</a></li>
+                            <li><a href="https://blog.hubspot.com/marketing/best-crm-for-higher-education" class="text-sky-600 hover:underline">HubSpot: 4 best CRMs for higher education</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-slate-800 mb-2">Mailchimp</h4>
+                        <ul class="space-y-2">
+                            <li><a href="https://moosend.com/blog/mailchimp-pricing/" class="text-sky-600 hover:underline">Moosend: Mailchimp Pricing Review</a></li>
+                            <li><a href="https://mailchimp.com/pricing/marketing/compare-plans/" class="text-sky-600 hover:underline">Mailchimp: Official Pricing Page</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-slate-800 mb-2">Campaign Monitor</h4>
+                        <ul class="space-y-2">
+                            <li><a href="https://www.sender.net/reviews/campaign-monitor/pricing/" class="text-sky-600 hover:underline">Sender.net: Pricing Analysis</a></li>
+                            <li><a href="https://www.campaignmonitor.com/pricing/" class="text-sky-600 hover:underline">Campaign Monitor: Official Pricing Page</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-slate-800 mb-2">Constant Contact</h4>
+                        <ul class="space-y-2">
+                            <li><a href="https://www.omnisend.com/blog/constant-contact-pricing/" class="text-sky-600 hover:underline">Omnisend: Constant Contact Pricing</a></li>
+                            <li><a href="https://www.constantcontact.com/pricing" class="text-sky-600 hover:underline">Constant Contact: Official Pricing Page</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-slate-800 mb-2">Smore</h4>
+                        <ul class="space-y-2">
+                            <li><a href="https://www.smore.com/pricing/" class="text-sky-600 hover:underline">Smore: Official Pricing Page</a></li>
+                            <li><a href="https://www.smore.com/faqs/" class="text-sky-600 hover:underline">Smore: FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+    </div>
+
+    <script>
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetId = button.dataset.target;
+
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                button.classList.add('active');
+
+                tabContents.forEach(content => {
+                    if (content.id === `${targetId}-content`) {
+                        content.classList.add('active');
+                    } else {
+                        content.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
